@@ -1,0 +1,35 @@
+{
+  "name": "serve-cra",
+  "version": "0.0.1",
+  "description": "Serve an create-react-app (CRA) app with runtime environment variables",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kraf/serve-cra.git"
+  },
+  "author": "Filip Krasnianski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kraf/serve-cra/issues"
+  },
+  "homepage": "https://github.com/kraf/serve-cra#readme",
+  "dependencies": {
+    "compression": "^1.7.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2017
+    }
+  }
+}
