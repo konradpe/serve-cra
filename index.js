@@ -28,10 +28,10 @@ for (const envKey in process.env) {
 const indexHtml = fs
   .readFileSync(path.join(SC_ROOT_PATH, 'index.html'), 'utf8')
   .replace(
-    '<body>',
-    `<body><script>window.${SC_WINDOW_EXPORT}=${JSON.stringify(
+    '</head>',
+    `<script>window.${SC_WINDOW_EXPORT}=${JSON.stringify(
       craEnv
-    )}</script>`
+    )}</script></head>`
   );
 
 fs.writeFileSync(SC_TEMP_FILE, indexHtml, { encoding: 'utf8' });
