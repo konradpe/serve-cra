@@ -3,10 +3,8 @@ const path = require('path');
 const express = require('express');
 const compression = require('compression');
 
-/** Handle Ctrl-C */
-process.on('SIGINT', function() {
-  process.exit();
-});
+process.on('SIGINT', () => process.exit());
+process.on('SIGTERM', () => process.exit());
 
 const app = express();
 
